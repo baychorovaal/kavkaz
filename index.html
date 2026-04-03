@@ -3,257 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <title>Кавказская кухня</title>
+
     <style>
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: Arial;
         }
-        
-        .header, .footer {
+
+        .header {
             background: #7B1F2B;
             color: white;
             text-align: center;
             padding: 20px;
         }
-        
+
         .section {
             padding: 30px 20px;
-            min-height: 400px;
         }
-        
-        .section h2 {
+
+        .section__title {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-        
-        .cards {
+
+        .section--green { background: #2d7447; }
+        .section--brown { background: #8d6023; }
+        .section--blue { background: #234c7b; }
+        .section--purple { background: #693c96; }
+
+
+        .section__cards {
             display: flex;
-            gap: 30px;
-            width: 450 px;
-            margin: 0 auto;
+            gap: 20px;
+            justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .card {
             width: 250px;
-            background: rgb(255, 255, 255);
-            overflow: hidden;
+            background: white;
         }
-        
-        .card img {
+
+        .card--green { background: #61c76b; }
+        .card--yellow { background: #cdb366; }
+        .card--blue { background: #5e81c7; }
+        .card--purple { background: #9570de; }
+
+        .card__img {
             width: 100%;
             height: 150px;
         }
-        
-        .card-content {
-            padding: 15px;
+
+        .card__content {
+            padding: 10px;
         }
-        
-        .card h3 {
+
+        .card__title {
             margin-bottom: 10px;
             font-size: 18px;
         }
-        
-        .card p {
+
+        .card__text {
             font-size: 14px;
-            color: #ffffff;
-        }
-        
-        .section1 {
-            background:#2d7447;
-        }
-        
-        .section2 {
-            background:#8d6023;
-        }
-        
-        .section3 {
-            background:#234c7b;
-        }
-        
-        .section4 {
-            background:#693c96;
-        }
-        
-        .section1 .cards {
-            justify-content: space-around;
-        }
-        
-        .section2 .cards {
-            justify-content: flex-start;
-        }
-        
-        .section3 .cards {
-            justify-content: flex-end;
-        }
-        
-        .section4 .cards {
-            justify-content: space-between;
-        }
-        
-        .section1 .card {
-            width: 250px;
-            max-height: 400px;
-        }
-        
-        .section2 .card {
-            width: 290px;
-            max-height: 400px;
-        }
-        
-        .section3 .card {
-            width: 320px;
-            max-height: 500px;
-        }
-        
-        .section4 .card {
-            width: 390px;
-            max-width: 600px;
-        }
-        
-        .section1 .card {
-            background: #61c76b;
-        }
-        
-        .section2 .card {
-            background: #cdb366;
-        }
-        
-        .section3 .card {
-            background: #5e81c7;
-        }
-        
-        .section4 .card {
-            background: #9570de;
+            color: white;
         }
 
+        .footer {
+            background: #7B1F2B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
-
 </head>
+
 <body>
+
     <div class="header">
         <h1>Вкусный Кавказ</h1>
         <p>Блюда Кавказской кухни</p>
     </div>
 
-    <div class="section section1">
-        <h2>Блюда Карачаевской кухни</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13" alt="Фото 1">
-                <div class="card-content">
-                    <h3>Хычын</h3>
-                    <p>Хычыны едят горячими, с пылу с жару, и только руками. Пышные пироги особенно хороши со сметаной. Пирог рекомендуют запивать айраном</p>
+    <div class="section section--green">
+        <h2 class="section__title">Карачаевская кухня</h2>
+
+        <div class="section__cards">
+
+            <div class="card card--green">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Хычын</h3>
+                    <p class="card__text">Пироги едят горячими со сметаной и айраном.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13" alt="Фото 2">
-                <div class="card-content">
-                    <h3>Бышлакъ биширген</h3>
-                    <p>Традиционное карачаевское блюдо, которое представляет собой сочетание картофельного пюре и большого количества сыра. Дословно перевести на русский язык название — «сваренный сыр». </p>
+
+            <div class="card card--green">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Бышлакъ биширген</h3>
+                    <p class="card__text">Картофель и сыр — простое и вкусное блюдо.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13" alt="Фото 3">
-                <div class="card-content">
-                    <h3>Айран</h3>
-                    <p>Это не просто напиток, а культурный код народа, сочетающий природные богатства региона, вековые технологии и гастрономические традиции.</p>
+
+            <div class="card card--green">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Айран</h3>
+                    <p class="card__text">Освежающий традиционный напиток.</p>
                 </div>
             </div>
+
         </div>
     </div>
 
-    
-    <div class="section section2">
-        <h2>Блюда Кабардинской кухни</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13" alt="Фото 4">
-                <div class="card-content">
-                    <h3>Гедлибже</h3>
-                    <p>Курица, тушённая в нежном чесночно-сливочном соусе. Блюдо получается очень ароматным и буквально тает во рту.</p>
+    <div class="section section--brown">
+        <h2 class="section__title">Кабардинская кухня</h2>
+
+        <div class="section__cards">
+
+            <div class="card card--yellow">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Гедлибже</h3>
+                    <p class="card__text">Курица в сливочном соусе.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg" alt="Фото 5">
-                <div class="card-content">
-                    <h3>Лягур</h3>
-                    <p>Жареное мясо с луком и специями. Простое, но невероятно вкусное блюдо с насыщенным ароматом и аппетитной корочкой.</p>
+
+            <div class="card card--yellow">
+                <img class="card__img" src="https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg">
+                <div class="card__content">
+                    <h3 class="card__title">Лягур</h3>
+                    <p class="card__text">Жареное мясо с луком.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13" alt="Фото 6">
-                <div class="card-content">
-                    <h3>Шипс</h3>
-                    <p>Традиционный кабардинский густой соус на мясном бульоне с чесноком и специями. Его подают с мясом и хлебом — ароматный соус, который делает любое блюдо ещё вкуснее.</p>
+
+            <div class="card card--yellow">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Шипс</h3>
+                    <p class="card__text">Густой мясной соус.</p>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <div class="section section3">
-        <h2>Блюда Дагестанской кухни</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13" alt="Фото 7">
-                <div class="card-content">
-                    <h3>Аварский хинкал</h3>
-                    <p>Кусочки теста подаются с отварным мясом, бульоном и ароматным чесночным соусом. Настоящее дагестанское застолье невозможно представить без этого блюда.</p>
+    <div class="section section--blue">
+        <h2 class="section__title">Дагестанская кухня</h2>
+
+        <div class="section__cards">
+
+            <div class="card card--blue">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Хинкал</h3>
+                    <p class="card__text">Тесто с мясом и соусом.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13" alt="Фото 8">
-                <div class="card-content">
-                    <h3>Чуду</h3>
-                    <p>Тонкие лепёшки с начинкой из зелени, сыра, мяса или тыквы. Хрустящие снаружи и сочные внутри — любимая выпечка Дагестана.</p>
+
+            <div class="card card--blue">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Чуду</h3>
+                    <p class="card__text">Лепёшки с начинкой.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13" alt="Фото 9">
-                <div class="card-content">
-                    <h3>Курзе</h3>
-                    <p>Небольшие пельмени с сочной мясной начинкой. Их лепят вручную особым способом, который делает каждое изделие маленьким кулинарным искусством.</p>
+
+            <div class="card card--blue">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Курзе</h3>
+                    <p class="card__text">Маленькие пельмени.</p>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <div class="section section4">
-        <h2>Блюда Чеченской кухни</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13" alt="Фото 10">
-                <div class="card-content">
-                    <h3>Жижиг-галнаш</h3>
-                    <p>Одно из самых известных чеченских блюд: кусочки мяса подаются с варёными галушками и ароматным чесночным соусом. Сытно, просто и очень вкусно.</p>
+    <div class="section section--purple">
+        <h2 class="section__title">Чеченская кухня</h2>
+
+        <div class="section__cards">
+
+            <div class="card card--purple">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Жижиг-галнаш</h3>
+                    <p class="card__text">Мясо с галушками.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13" alt="Фото 11">
-                <div class="card-content">
-                    <h3>Чепалгаш</h3>
-                    <p>Тонкие лепёшки с начинкой из творога или тыквы. После выпечки их смазывают сливочным маслом, благодаря чему они становятся особенно нежными.</p>
+
+            <div class="card card--purple">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Чепалгаш</h3>
+                    <p class="card__text">Лепёшки с тыквой.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13" alt="Фото 12">
-                <div class="card-content">
-                    <h3>Сискал</h3>
-                    <p>Небольшие кукурузные лепёшки с хрустящей корочкой. Их подают горячими вместе с мясом, сыром или соусами — простой, но очень вкусный символ домашней чеченской кухни.</p>
+
+            <div class="card card--purple">
+                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13">
+                <div class="card__content">
+                    <h3 class="card__title">Сискал</h3>
+                    <p class="card__text">Кукурузные лепёшки.</p>
                 </div>
             </div>
+
         </div>
     </div>
-
 
     <div class="footer">
         <p>Традиции Кавказа в каждом блюде!</p>
     </div>
+
 </body>
 </html>
