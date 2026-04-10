@@ -1,225 +1,342 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Кавказская кухня</title>
+<meta charset="UTF-8">
+<title>Кавказская кухня</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+:root {
+    --color-main: #7B1F2B;
 
-        body {
-            font-family: Arial;
-        }
+    --green: #2d7447;
+    --brown: #8d6023;
+    --blue: #234c7b;
+    --purple: #693c96;
 
-        .header {
-            background: #7B1F2B;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+    --card-green: #61c76b;
+    --card-yellow: #cdb366;
+    --card-blue: #5e81c7;
+    --card-purple: #9570de;
 
-        .section {
-            padding: 30px 20px;
-        }
+    --space: 20px;
+    --font: Arial, sans-serif;
+}
 
-        .section__title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .section--green { background: #2d7447; }
-        .section--brown { background: #8d6023; }
-        .section--blue { background: #234c7b; }
-        .section--purple { background: #693c96; }
+body {
+    font-family: var(--font);
+}
+
+.header, .footer {
+    background: var(--color-main);
+    color: white;
+    text-align: center;
+    padding: var(--space);
+}
+
+.section {
+    padding: 30px 20px;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section--green { background: var(--green); }
+.section--brown { background: var(--brown); }
+.section--blue { background: var(--blue); }
+.section--purple { background: var(--purple); }
+
+.section__cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+}
+
+.card--green { background: var(--card-green); }
+.card--yellow { background: var(--card-yellow); }
+.card--blue { background: var(--card-blue); }
+.card--purple { background: var(--card-purple); }
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 10px;
+}
+
+.card__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card__text {
+    font-size: 14px;
+    color: white;
+}
 
 
-        .section__cards {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 250px;
-            background: white;
-        }
-
-        .card--green { background: #61c76b; }
-        .card--yellow { background: #cdb366; }
-        .card--blue { background: #5e81c7; }
-        .card--purple { background: #9570de; }
-
-        .card__img {
-            width: 100%;
-            height: 150px;
-        }
-
-        .card__content {
-            padding: 10px;
-        }
-
-        .card__title {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .card__text {
-            font-size: 14px;
-            color: white;
-        }
-
-        .footer {
-            background: #7B1F2B;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+[dir="rtl"] .section__cards {
+    flex-direction: row-reverse;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>Вкусный Кавказ</h1>
-        <p>Блюда Кавказской кухни</p>
-    </div>
+<div class="header">
+    <h1 data-i18n="title"></h1>
+    <p data-i18n="subtitle"></p>
+</div>
 
-    <div class="section section--green">
-        <h2 class="section__title">Карачаевская кухня</h2>
+<div style="text-align:center; margin:10px;">
+    <button onclick="setLang('ru')">RU</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ar')">AR</button>
+</div>
 
-        <div class="section__cards">
+<div class="section section--green">
+    <h2 class="section__title" data-i18n="karachay"></h2>
+    <div class="section__cards">
 
-            <div class="card card--green">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Хычын</h3>
-                    <p class="card__text">Пироги едят горячими со сметаной и айраном.</p>
-                </div>
+        <div class="card card--green">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="khychin"></h3>
+                <p data-i18n="khychin_desc"></p>
             </div>
-
-            <div class="card card--green">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Бышлакъ биширген</h3>
-                    <p class="card__text">Картофель и сыр — простое и вкусное блюдо.</p>
-                </div>
-            </div>
-
-            <div class="card card--green">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Айран</h3>
-                    <p class="card__text">Освежающий традиционный напиток.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="section section--brown">
-        <h2 class="section__title">Кабардинская кухня</h2>
-
-        <div class="section__cards">
-
-            <div class="card card--yellow">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Гедлибже</h3>
-                    <p class="card__text">Курица в сливочном соусе.</p>
-                </div>
+        <div class="card card--green">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="bishlak"></h3>
+                <p data-i18n="bishlak_desc"></p>
             </div>
-
-            <div class="card card--yellow">
-                <img class="card__img" src="https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg">
-                <div class="card__content">
-                    <h3 class="card__title">Лягур</h3>
-                    <p class="card__text">Жареное мясо с луком.</p>
-                </div>
-            </div>
-
-            <div class="card card--yellow">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Шипс</h3>
-                    <p class="card__text">Густой мясной соус.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="section section--blue">
-        <h2 class="section__title">Дагестанская кухня</h2>
-
-        <div class="section__cards">
-
-            <div class="card card--blue">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Хинкал</h3>
-                    <p class="card__text">Тесто с мясом и соусом.</p>
-                </div>
+        <div class="card card--green">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="ayran"></h3>
+                <p data-i18n="ayran_desc"></p>
             </div>
-
-            <div class="card card--blue">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Чуду</h3>
-                    <p class="card__text">Лепёшки с начинкой.</p>
-                </div>
-            </div>
-
-            <div class="card card--blue">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Курзе</h3>
-                    <p class="card__text">Маленькие пельмени.</p>
-                </div>
-            </div>
-
         </div>
+
     </div>
+</div>
 
-    <div class="section section--purple">
-        <h2 class="section__title">Чеченская кухня</h2>
 
-        <div class="section__cards">
+<div class="section section--brown">
+    <h2 class="section__title" data-i18n="kabard"></h2>
+    <div class="section__cards">
 
-            <div class="card card--purple">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Жижиг-галнаш</h3>
-                    <p class="card__text">Мясо с галушками.</p>
-                </div>
+        <div class="card card--yellow">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="gedlibje"></h3>
+                <p data-i18n="gedlibje_desc"></p>
             </div>
-
-            <div class="card card--purple">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Чепалгаш</h3>
-                    <p class="card__text">Лепёшки с тыквой.</p>
-                </div>
-            </div>
-
-            <div class="card card--purple">
-                <img class="card__img" src="https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13">
-                <div class="card__content">
-                    <h3 class="card__title">Сискал</h3>
-                    <p class="card__text">Кукурузные лепёшки.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="footer">
-        <p>Традиции Кавказа в каждом блюде!</p>
+        <div class="card card--yellow">
+            <img class="card__img" src="https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg">
+            <div class="card__content">
+                <h3 data-i18n="lyagur"></h3>
+                <p data-i18n="lyagur_desc"></p>
+            </div>
+        </div>
+
+        <div class="card card--yellow">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="ships"></h3>
+                <p data-i18n="ships_desc"></p>
+            </div>
+        </div>
+
     </div>
+</div>
+
+<div class="section section--blue">
+    <h2 class="section__title" data-i18n="dagestan"></h2>
+    <div class="section__cards">
+
+        <div class="card card--blue">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="hinkal"></h3>
+                <p data-i18n="hinkal_desc"></p>
+            </div>
+        </div>
+
+        <div class="card card--blue">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="chudu"></h3>
+                <p data-i18n="chudu_desc"></p>
+            </div>
+        </div>
+
+        <div class="card card--blue">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="kurze"></h3>
+                <p data-i18n="kurze_desc"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Чеченская -->
+<div class="section section--purple">
+    <h2 class="section__title" data-i18n="chechen"></h2>
+    <div class="section__cards">
+
+        <div class="card card--purple">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="zhizhig"></h3>
+                <p data-i18n="zhizhig_desc"></p>
+            </div>
+        </div>
+
+        <div class="card card--purple">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="chepalgash"></h3>
+                <p data-i18n="chepalgash_desc"></p>
+            </div>
+        </div>
+
+        <div class="card card--purple">
+            <img class="card__img" src="https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13">
+            <div class="card__content">
+                <h3 data-i18n="siskal"></h3>
+                <p data-i18n="siskal_desc"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <p data-i18n="footer"></p>
+</div>
+
+<script>
+const languages = { ru: {
+title:"Вкусный Кавказ",
+subtitle:"Блюда Кавказской кухни",
+karachay:"Карачаевская кухня",
+kabard:"Кабардинская кухня",
+dagestan:"Дагестанская кухня",
+chechen:"Чеченская кухня",
+
+khychin:"Хычын", khychin_desc:"Пироги со сметаной",
+bishlak:"Бышлакъ биширген", bishlak_desc:"Картофель с сыром",
+ayran:"Айран", ayran_desc:"Освежающий напиток",
+
+gedlibje:"Гедлибже", gedlibje_desc:"Курица в соусе",
+lyagur:"Лягур", lyagur_desc:"Жареное мясо",
+ships:"Шипс", ships_desc:"Мясной соус",
+
+hinkal:"Хинкал", hinkal_desc:"Тесто с мясом",
+chudu:"Чуду", chudu_desc:"Лепешки",
+kurze:"Курзе", kurze_desc:"Пельмени",
+
+zhizhig:"Жижиг-галнаш", zhizhig_desc:"Мясо с галушками",
+chepalgash:"Чепалгаш", chepalgash_desc:"Лепешки с тыквой",
+siskal:"Сискал", siskal_desc:"Кукурузные лепешки",
+
+footer:"Традиции Кавказа в каждом блюде!"
+},
+
+en: {
+title:"Tasty Caucasus",
+subtitle:"Caucasian cuisine",
+karachay:"Karachay cuisine",
+kabard:"Kabardian cuisine",
+dagestan:"Dagestan cuisine",
+chechen:"Chechen cuisine",
+
+khychin:"Khychin", khychin_desc:"Pies with sour cream",
+bishlak:"Bishlak", bishlak_desc:"Potatoes with cheese",
+ayran:"Ayran", ayran_desc:"Refreshing drink",
+
+gedlibje:"Gedlibje", gedlibje_desc:"Chicken in sauce",
+lyagur:"Lyagur", lyagur_desc:"Fried meat",
+ships:"Ships", ships_desc:"Meat sauce",
+
+hinkal:"Hinkal", hinkal_desc:"Dough with meat",
+chudu:"Chudu", chudu_desc:"Flatbread",
+kurze:"Kurze", kurze_desc:"Dumplings",
+
+zhizhig:"Zhizhig", zhizhig_desc:"Meat with dumplings",
+chepalgash:"Chepalgash", chepalgash_desc:"Pumpkin flatbread",
+siskal:"Siskal", siskal_desc:"Corn bread",
+
+footer:"Traditions in every dish!"
+},
+
+ar: {
+title:"القوقاز اللذيذ",
+subtitle:"مأكولات القوقاز",
+karachay:"مطبخ قراتشاي",
+kabard:"المطبخ القبردي",
+dagestan:"مطبخ داغستان",
+chechen:"المطبخ الشيشاني",
+
+khychin:"خيتشين", khychin_desc:"فطائر بالقشدة",
+bishlak:"بيشلاك", bishlak_desc:"بطاطا مع الجبن",
+ayran:"آيران", ayran_desc:"مشروب منعش",
+
+gedlibje:"جدلبجي", gedlibje_desc:"دجاج بالصلصة",
+lyagur:"لياغور", lyagur_desc:"لحم مقلي",
+ships:"شيبس", ships_desc:"صلصة لحم",
+
+hinkal:"خينكال", hinkal_desc:"عجين مع اللحم",
+chudu:"تشودو", chudu_desc:"خبز محشو",
+kurze:"كورزي", kurze_desc:"زلابية",
+
+zhizhig:"جيجيج", zhizhig_desc:"لحم مع عجين",
+chepalgash:"تشيبالغاش", chepalgash_desc:"خبز بالقرع",
+siskal:"سيسكال", siskal_desc:"خبز الذرة",
+
+footer:"تقاليد القوقاز في كل طبق!"
+} };
+
+let currentLang="ru";
+
+function setLang(lang){
+currentLang=lang;
+document.documentElement.dir = (lang==="ar") ? "rtl" : "ltr";
+translate();
+}
+
+function translate(){
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+el.textContent = languages[currentLang][el.dataset.i18n];
+});
+}
+
+translate();
+</script>
 
 </body>
 </html>
