@@ -1,0 +1,41 @@
+{
+    "title": "코카서스 요리",
+    "subtitle": "전통 음식",
+  
+    "sections": {
+      "karachay": "카라차이 요리",
+      "kabard": "카바르디 요리",
+      "dagestan": "다게스탄 요리",
+      "chechen": "체첸 요리"
+    },
+  
+    "khychin": "히친",
+    "khychin_desc": "치즈 감자 파이",
+  
+    "bishlak": "비슐락",
+    "bishlak_desc": "수제 치즈 감자",
+  
+    "ayran": "아이란",
+    "ayran_desc": "발효 음료",
+  
+    "gedlibje": "게들리브제",
+    "gedlibje_desc": "크림 치킨",
+  
+    "lyagur": "야채 볶음 고기",
+  
+    "ships": "고기 소스",
+  
+    "hinkal": "힌칼",
+  
+    "chudu": "플랫브레드",
+  
+    "kurze": "만두",
+  
+    "zhizhig": "고기 만두",
+  
+    "chepalgash": "치즈 빵",
+  
+    "siskal": "옥수수 빵",
+  
+    "footer": "코카서스 전통 음식"
+  }

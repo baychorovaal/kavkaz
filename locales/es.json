@@ -1,0 +1,49 @@
+{
+    "title": "Cocina caucásica",
+    "subtitle": "Platos tradicionales del Cáucaso",
+  
+    "sections": {
+      "karachay": "Cocina karachái",
+      "kabard": "Cocina cabardina",
+      "dagestan": "Cocina de Daguestán",
+      "chechen": "Cocina chechena"
+    },
+  
+    "khychin": "Jychin",
+    "khychin_desc": "Pastel con queso y patatas",
+  
+    "bishlak": "Bishlak",
+    "bishlak_desc": "Patatas con queso casero",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Bebida refrescante fermentada",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Pollo en salsa cremosa",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Carne frita con cebolla",
+  
+    "ships": "Ships",
+    "ships_desc": "Salsa de carne",
+  
+    "hinkal": "Jinkal",
+    "hinkal_desc": "Masa con carne y caldo",
+  
+    "chudu": "Chudu",
+    "chudu_desc": "Pan relleno",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Empanadillas de carne",
+  
+    "zhizhig": "Zhizhig-Galnash",
+    "zhizhig_desc": "Carne con dumplings",
+  
+    "chepalgash": "Chepalgash",
+    "chepalgash_desc": "Pan con queso",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Pan de maíz",
+  
+    "footer": "Tradiciones del Cáucaso en cada plato"
+  }

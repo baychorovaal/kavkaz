@@ -1,0 +1,49 @@
+{
+    "title": "Caucasian Cuisine",
+    "subtitle": "Traditional dishes of the Caucasus",
+  
+    "sections": {
+      "karachay": "Karachay cuisine",
+      "kabard": "Kabardian cuisine",
+      "dagestan": "Dagestan cuisine",
+      "chechen": "Chechen cuisine"
+    },
+  
+    "khychin": "Khychin",
+    "khychin_desc": "Pie with cheese and potatoes",
+  
+    "bishlak": "Bishlak",
+    "bishlak_desc": "Potatoes with homemade cheese",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Refreshing fermented drink",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Chicken in creamy sauce",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Fried meat with onions",
+  
+    "ships": "Ships",
+    "ships_desc": "Meat broth sauce",
+  
+    "hinkal": "Hinkal",
+    "hinkal_desc": "Dough with meat and broth",
+  
+    "chudu": "Chudu",
+    "chudu_desc": "Stuffed flatbread",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Meat dumplings",
+  
+    "zhizhig": "Zhizhig-Galnash",
+    "zhizhig_desc": "Meat with dumplings",
+  
+    "chepalgash": "Chepalgash",
+    "chepalgash_desc": "Flatbread with cottage cheese",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Corn flatbread",
+  
+    "footer": "Traditions of the Caucasus in every dish"
+  }

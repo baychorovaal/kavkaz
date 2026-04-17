@@ -1,0 +1,49 @@
+{
+    "title": "مطبخ القوقاز",
+    "subtitle": "أطباق تقليدية من القوقاز",
+  
+    "sections": {
+      "karachay": "مطبخ قراتشاي",
+      "kabard": "المطبخ القبردي",
+      "dagestan": "مطبخ داغستان",
+      "chechen": "المطبخ الشيشاني"
+    },
+  
+    "khychin": "خيتشين",
+    "khychin_desc": "فطيرة بالجبن والبطاطس",
+  
+    "bishlak": "بيشلاك",
+    "bishlak_desc": "بطاطس مع جبن منزلي",
+  
+    "ayran": "آيران",
+    "ayran_desc": "مشروب منعش مخمر",
+  
+    "gedlibje": "جدلبجي",
+    "gedlibje_desc": "دجاج بصلصة كريمية",
+  
+    "lyagur": "لياغور",
+    "lyagur_desc": "لحم مقلي مع البصل",
+  
+    "ships": "شيبس",
+    "ships_desc": "صلصة مرق اللحم",
+  
+    "hinkal": "خينكال",
+    "hinkal_desc": "عجين مع لحم ومرق",
+  
+    "chudu": "تشودو",
+    "chudu_desc": "خبز محشو",
+  
+    "kurze": "كورزي",
+    "kurze_desc": "زلابية باللحم",
+  
+    "zhizhig": "جيجيغ-غالنش",
+    "zhizhig_desc": "لحم مع زلابية",
+  
+    "chepalgash": "تشيبالغاش",
+    "chepalgash_desc": "خبز بالجبن",
+  
+    "siskal": "سيسكال",
+    "siskal_desc": "خبز الذرة",
+  
+    "footer": "تقاليد القوقاز في كل طبق"
+  }

@@ -1,0 +1,49 @@
+{
+    "title": "Kafkas Mutfağı",
+    "subtitle": "Geleneksel Kafkas yemekleri",
+  
+    "sections": {
+      "karachay": "Karaçay mutfağı",
+      "kabard": "Kabardey mutfağı",
+      "dagestan": "Dağıstan mutfağı",
+      "chechen": "Çeçen mutfağı"
+    },
+  
+    "khychin": "Hıçın",
+    "khychin_desc": "Peynirli ve patatesli börek",
+  
+    "bishlak": "Bişlak",
+    "bishlak_desc": "Ev yapımı peynirli patates",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Fermente ferahlatıcı içecek",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Kremalı tavuk",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Soğanlı kızarmış et",
+  
+    "ships": "Şips",
+    "ships_desc": "Et sosu",
+  
+    "hinkal": "Hinkal",
+    "hinkal_desc": "Etli hamur",
+  
+    "chudu": "Çudu",
+    "chudu_desc": "İçli gözleme",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Etli mantı",
+  
+    "zhizhig": "Jijig-Galnaş",
+    "zhizhig_desc": "Mantılı et yemeği",
+  
+    "chepalgash": "Çepalgash",
+    "chepalgash_desc": "Lor peynirli gözleme",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Mısır ekmeği",
+  
+    "footer": "Her yemekte Kafkas gelenekleri"
+  }

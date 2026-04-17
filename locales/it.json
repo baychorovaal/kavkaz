@@ -1,0 +1,49 @@
+{
+    "title": "Cucina caucasica",
+    "subtitle": "Piatti tradizionali del Caucaso",
+  
+    "sections": {
+      "karachay": "Cucina caraciai",
+      "kabard": "Cucina cabardina",
+      "dagestan": "Cucina del Daghestan",
+      "chechen": "Cucina cecena"
+    },
+  
+    "khychin": "Khychin",
+    "khychin_desc": "Torta con formaggio e patate",
+  
+    "bishlak": "Bishlak",
+    "bishlak_desc": "Patate con formaggio fatto in casa",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Bevanda fermentata rinfrescante",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Pollo in salsa cremosa",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Carne fritta con cipolle",
+  
+    "ships": "Ships",
+    "ships_desc": "Salsa di carne",
+  
+    "hinkal": "Hinkal",
+    "hinkal_desc": "Pasta con carne e brodo",
+  
+    "chudu": "Chudu",
+    "chudu_desc": "Focaccia ripiena",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Ravioli di carne",
+  
+    "zhizhig": "Zhizhig-Galnash",
+    "zhizhig_desc": "Carne con gnocchi",
+  
+    "chepalgash": "Chepalgash",
+    "chepalgash_desc": "Focaccia con ricotta",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Pane di mais",
+  
+    "footer": "Tradizioni del Caucaso in ogni piatto"
+  }

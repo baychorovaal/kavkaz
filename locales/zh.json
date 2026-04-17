@@ -1,0 +1,45 @@
+{
+    "title": "高加索美食",
+    "subtitle": "传统高加索菜肴",
+  
+    "sections": {
+      "karachay": "卡拉恰伊菜系",
+      "kabard": "卡巴尔达菜系",
+      "dagestan": "达吉斯坦菜系",
+      "chechen": "车臣菜系"
+    },
+  
+    "khychin": "奇琴饼",
+    "khychin_desc": "奶酪土豆馅饼",
+  
+    "bishlak": "比什拉克",
+    "bishlak_desc": "土豆配自制奶酪",
+  
+    "ayran": "艾兰",
+    "ayran_desc": "发酵清凉饮料",
+  
+    "gedlibje": "格德利布杰",
+    "gedlibje_desc": "奶油鸡肉",
+  
+    "lyagur": "利亚古尔",
+    "lyagur_desc": "洋葱炒肉",
+  
+    "ships": "肉酱",
+  
+    "hinkal": "辛卡尔",
+    "hinkal_desc": "面团配肉汤",
+  
+    "chudu": "丘杜饼",
+    "chudu_desc": "夹馅饼",
+  
+    "kurze": "库尔泽",
+    "kurze_desc": "肉饺子",
+  
+    "zhizhig": "肉团面疙瘩",
+  
+    "chepalgash": "奶酪饼",
+  
+    "siskal": "玉米饼",
+  
+    "footer": "高加索的传统在每一道菜中"
+  }

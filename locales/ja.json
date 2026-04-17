@@ -1,0 +1,43 @@
+{
+    "title": "コーカサス料理",
+    "subtitle": "伝統的な料理",
+  
+    "sections": {
+      "karachay": "カラチャイ料理",
+      "kabard": "カバルダ料理",
+      "dagestan": "ダゲスタン料理",
+      "chechen": "チェチェン料理"
+    },
+  
+    "khychin": "ヒチン",
+    "khychin_desc": "チーズとジャガイモのパイ",
+  
+    "bishlak": "ビシュラック",
+    "bishlak_desc": "自家製チーズのじゃがいも",
+  
+    "ayran": "アイラン",
+    "ayran_desc": "発酵飲料",
+  
+    "gedlibje": "ゲドリブジェ",
+    "gedlibje_desc": "クリームチキン",
+  
+    "lyagur": "リャグル",
+    "lyagur_desc": "炒め肉",
+  
+    "ships": "肉ソース",
+  
+    "hinkal": "ヒンカル",
+    "hinkal_desc": "肉入り生地",
+  
+    "chudu": "チュドゥ",
+  
+    "kurze": "クルゼ",
+  
+    "zhizhig": "肉団子",
+  
+    "chepalgash": "チーズパン",
+  
+    "siskal": "トウモロコシパン",
+  
+    "footer": "コーカサスの伝統"
+  }

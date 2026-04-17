@@ -1,0 +1,49 @@
+{
+    "title": "Kaukasische Küche",
+    "subtitle": "Traditionelle Gerichte des Kaukasus",
+  
+    "sections": {
+      "karachay": "Karatschai-Küche",
+      "kabard": "Kabardinische Küche",
+      "dagestan": "Dagestanische Küche",
+      "chechen": "Tschetschenische Küche"
+    },
+  
+    "khychin": "Chytschin",
+    "khychin_desc": "Teigtasche mit Käse und Kartoffeln",
+  
+    "bishlak": "Bischlak",
+    "bishlak_desc": "Kartoffeln mit Hauskäse",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Erfrischendes fermentiertes Getränk",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Hähnchen in Sahnesoße",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Gebratenes Fleisch mit Zwiebeln",
+  
+    "ships": "Ships",
+    "ships_desc": "Fleischsoße",
+  
+    "hinkal": "Hinkal",
+    "hinkal_desc": "Teig mit Fleisch und Brühe",
+  
+    "chudu": "Tschudu",
+    "chudu_desc": "Gefülltes Fladenbrot",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Teigtaschen mit Fleisch",
+  
+    "zhizhig": "Zizhig-Galnasch",
+    "zhizhig_desc": "Fleisch mit Knödeln",
+  
+    "chepalgash": "Tschepalgash",
+    "chepalgash_desc": "Fladenbrot mit Quark",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Maisbrot",
+  
+    "footer": "Kaukasische Traditionen in jedem Gericht"
+  }

@@ -1,0 +1,49 @@
+{
+    "title": "Cuisine caucasienne",
+    "subtitle": "Plats traditionnels du Caucase",
+  
+    "sections": {
+      "karachay": "Cuisine karatchaï",
+      "kabard": "Cuisine kabarde",
+      "dagestan": "Cuisine du Daghestan",
+      "chechen": "Cuisine tchétchène"
+    },
+  
+    "khychin": "Khychin",
+    "khychin_desc": "Tourte au fromage et pommes de terre",
+  
+    "bishlak": "Bishlak",
+    "bishlak_desc": "Pommes de terre au fromage",
+  
+    "ayran": "Ayran",
+    "ayran_desc": "Boisson fermentée rafraîchissante",
+  
+    "gedlibje": "Gedlibje",
+    "gedlibje_desc": "Poulet en sauce crémeuse",
+  
+    "lyagur": "Lyagur",
+    "lyagur_desc": "Viande frite aux oignons",
+  
+    "ships": "Ships",
+    "ships_desc": "Sauce à base de viande",
+  
+    "hinkal": "Hinkal",
+    "hinkal_desc": "Pâte avec viande et bouillon",
+  
+    "chudu": "Chudu",
+    "chudu_desc": "Galette farcie",
+  
+    "kurze": "Kurze",
+    "kurze_desc": "Raviolis à la viande",
+  
+    "zhizhig": "Zhizhig-Galnash",
+    "zhizhig_desc": "Viande avec dumplings",
+  
+    "chepalgash": "Chepalgash",
+    "chepalgash_desc": "Galette au fromage blanc",
+  
+    "siskal": "Siskal",
+    "siskal_desc": "Pain de maïs",
+  
+    "footer": "Traditions du Caucase dans chaque plat"
+  }
