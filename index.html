@@ -1,114 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<title>Caucasian Cuisine</title>
-
-<style>
-:root{
-  --primary:#7B1F2B;
-
-  --karachay:#2d7447;
-  --kabard:#8d6023;
-  --dagestan:#234c7b;
-  --chechen:#693c96;
-
-  --radius:12px;
-}
-
-
-[data-theme="dark"]{
-  --bg:#0f0f0f;
-  --text:#fff;
-  --card:#1a1a1a;
-}
-
-[data-theme="light"]{
-  --bg:#fff;
-  --text:#111;
-  --card:#f3f3f3;
-}
-
-*{box-sizing:border-box;margin:0;padding:0;}
-
-body{
-  font-family:system-ui;
-  background:var(--bg);
-  color:var(--text);
-}
-
-
-.header{
-  background:var(--primary);
-  text-align:center;
-  padding:20px;
-}
-
-.header__title{font-size:28px;}
-.header__subtitle{opacity:0.8;}
-
-
-.controls{
-  text-align:center;
-  padding:15px;
-}
-
-.controls__btn{
-  padding:6px 12px;
-  margin:4px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-}
-
-
-.section{padding:40px 20px;}
-
-.section__title{
-  text-align:center;
-  margin-bottom:20px;
-  font-size:22px;
-}
-
-
-.cards{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-
-.card{
-  width:260px;
-  background:var(--card);
-  border-radius:var(--radius);
-  overflow:hidden;
-  transition:0.2s;
-}
-
-.card:hover{transform:translateY(-5px);}
-
-.card__img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-
-.card__content{padding:15px;}
-
-.card__title{margin-bottom:8px;}
-.card__text{font-size:14px;opacity:0.8;}
-
-
-.section--karachay{background:var(--karachay);}
-.section--kabard{background:var(--kabard);}
-.section--dagestan{background:var(--dagestan);}
-.section--chechen{background:var(--chechen);}
-
-
-html[dir="rtl"]{direction:rtl;}
-</style>
+  <meta charset="UTF-8">
+  <title>Caucasian Cuisine</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -119,93 +14,24 @@ html[dir="rtl"]{direction:rtl;}
 </header>
 
 <div class="controls">
-  <button class="controls__btn" onclick="setLang('ru')">RU</button>
-  <button class="controls__btn" onclick="setLang('ar')">AR</button>
-  <button class="controls__btn" onclick="setLang('en')">EN</button>
-  <button class="controls__btn" onclick="setLang('de')">DE</button>
-  <button class="controls__btn" onclick="setLang('es')">ES</button>
-  <button class="controls__btn" onclick="setLang('fr')">FR</button>
-  <button class="controls__btn" onclick="setLang('it')">IT</button>
-  <button class="controls__btn" onclick="setLang('ja')">JA</button>
-  <button class="controls__btn" onclick="setLang('ko')">KO</button>
-  <button class="controls__btn" onclick="setLang('tr')">TR</button>
-  <button class="controls__btn" onclick="setLang('zh')">ZH</button>
-  <button class="controls__btn" onclick="toggleTheme()">🌓</button>
+
+  <button onclick="setLang('ru')">RU</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('ar')">AR</button>
+  <button onclick="setLang('de')">DE</button>
+  <button onclick="setLang('es')">ES</button>
+  <button onclick="setLang('fr')">FR</button>
+  <button onclick="setLang('it')">IT</button>
+  <button onclick="setLang('ja')">JA</button>
+  <button onclick="setLang('ko')">KO</button>
+  <button onclick="setLang('tr')">TR</button>
+  <button onclick="setLang('zh')">ZH</button>
+
+  <button onclick="toggleTheme()">🌓</button>
 </div>
 
+<main id="app"></main>
 
-<section class="section section--karachay">
-  <h2 class="section__title" data-i18n="sections.karachay"></h2>
-  <div class="cards">
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13"><div class="card__content"><h3 class="card__title" data-i18n="khychin"></h3><p class="card__text" data-i18n="khychin_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="bishlak"></h3><p data-i18n="bishlak_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="ayran"></h3><p data-i18n="ayran_desc"></p></div></div>
-  </div>
-</section>
-
-
-<section class="section section--kabard">
-  <h2 class="section__title" data-i18n="sections.kabard"></h2>
-  <div class="cards">
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="gedlibje"></h3><p data-i18n="gedlibje_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg"><div class="card__content"><h3 data-i18n="lyagur"></h3><p data-i18n="lyagur_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="ships"></h3><p data-i18n="ships_desc"></p></div></div>
-  </div>
-</section>
-
-
-<section class="section section--dagestan">
-  <h2 class="section__title" data-i18n="sections.dagestan"></h2>
-  <div class="cards">
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="hinkal"></h3><p data-i18n="hinkal_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="chudu"></h3><p data-i18n="chudu_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="kurze"></h3><p data-i18n="kurze_desc"></p></div></div>
-  </div>
-</section>
-
-
-<section class="section section--chechen">
-  <h2 class="section__title" data-i18n="sections.chechen"></h2>
-  <div class="cards">
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="zhizhig"></h3><p data-i18n="zhizhig_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="chepalgash"></h3><p data-i18n="chepalgash_desc"></p></div></div>
-    <div class="card"><img class="card__img" src="https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13"><div class="card__content"><h3 data-i18n="siskal"></h3><p data-i18n="siskal_desc"></p></div></div>
-  </div>
-</section>
-
-<script>
-let cache = {};
-
-async function loadLang(lang){
-  if(cache[lang]) return cache[lang];
-  const res = await fetch(`./locales/${lang}.json`);
-  const data = await res.json();
-  cache[lang] = data;
-  return data;
-}
-
-function apply(t){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    const value = key.split('.').reduce((o,i)=>o?.[i], t);
-    if(value) el.textContent = value;
-  });
-}
-
-async function setLang(lang){
-  const t = await loadLang(lang);
-  document.documentElement.dir = (lang==="ar")?"rtl":"ltr";
-  apply(t);
-}
-
-function toggleTheme(){
-  const html = document.documentElement;
-  html.dataset.theme =
-    html.dataset.theme==="dark"?"light":"dark";
-}
-
-setLang("ru");
-</script>
-
+<script src="./script.js"></script>
 </body>
 </html>

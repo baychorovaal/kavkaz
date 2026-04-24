@@ -1,0 +1,40 @@
+{
+    "sections": [
+      {
+        "title": "sections.green",
+        "color": "var(--green)",
+        "cards": [
+          { "title": "khychin", "text": "khychin_desc", "img": "https://avatars.mds.yandex.net/i?id=435379b56f80462fbbe7f1890a121826_l-5233806-images-thumbs&n=13" },
+          { "title": "bishlak", "text": "bishlak_desc", "img": "https://avatars.mds.yandex.net/i?id=cf27878de823fa11de28e2e02cb4cd4189fa8860-5242655-images-thumbs&n=13" },
+          { "title": "ayran", "text": "ayran_desc", "img": "https://avatars.mds.yandex.net/i?id=fc3091be2061ec0ccbc2c25e7d677feae337d5f4-5232642-images-thumbs&n=13" }
+        ]
+      },
+      {
+        "title": "sections.orange",
+        "color": "var(--orange)",
+        "cards": [
+          { "title": "gedlibje", "text": "gedlibje_desc", "img": "https://avatars.mds.yandex.net/i?id=1157f4a1819b83496d9f18d004d0c11e2155d90b-5497624-images-thumbs&n=13" },
+          { "title": "lyagur", "text": "lyagur_desc", "img": "https://new.lyubimiigorod.ru/images/catalog/636aaaf3ef138.jpg" },
+          { "title": "ships", "text": "ships_desc", "img": "https://avatars.mds.yandex.net/i?id=cf670a5c1120f442f22f0fd076ef02cf_l-9266026-images-thumbs&n=13" }
+        ]
+      },
+      {
+        "title": "sections.blue",
+        "color": "var(--blue)",
+        "cards": [
+          { "title": "hinkal", "text": "hinkal_desc", "img": "https://avatars.mds.yandex.net/i?id=84fba0e54a97279593fd0dc75e062dd909820023-9837641-images-thumbs&n=13" },
+          { "title": "chudu", "text": "chudu_desc", "img": "https://avatars.mds.yandex.net/i?id=afae76469fbbe073ffcda4b19a0860a1a6d24a62-9181645-images-thumbs&n=13" },
+          { "title": "kurze", "text": "kurze_desc", "img": "https://avatars.mds.yandex.net/i?id=b8d6803bebea53add5e1df9c25a0173e51460a67-4360605-images-thumbs&n=13" }
+        ]
+      },
+      {
+        "title": "sections.purple",
+        "color": "var(--purple)",
+        "cards": [
+          { "title": "zhizhig", "text": "zhizhig_desc", "img": "https://avatars.mds.yandex.net/i?id=86d0e856aef2c68341a4f1228c805b5803b2dae6-4568991-images-thumbs&n=13" },
+          { "title": "chepalgash", "text": "chepalgash_desc", "img": "https://avatars.mds.yandex.net/i?id=667f5157c47417ed5beff818aa71ecc6d9238c51-4012095-images-thumbs&n=13" },
+          { "title": "siskal", "text": "siskal_desc", "img": "https://avatars.mds.yandex.net/i?id=3e1e1848406afa32d2402db79769bfe3015cee52-10247400-images-thumbs&n=13" }
+        ]
+      }
+    ]
+  }
